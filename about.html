@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Insert bootstrap stylesheet cdn here -->
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Cats | About</title>
   </head>
@@ -42,13 +47,13 @@
         style="background-image: url('images/about-cover.jpg')"
       ></div>
     </section>
-    <section>
+    <section class="py-5">
       <!-- In this section the display should be 3 items per row on bigger screens(breakpoint:md) and 1 item per row on mobile -->
       <!-- Hint use breakpoints and row-cols property -->
-      <div>
+      <div class="container">
         <h2>Cat Senses</h2>
-        <div>
-          <div>
+        <div class="row row-cols-1 row-cols-md-3">
+          <div class="col">
             <h3>Vision</h3>
             <p>
               Cats have excellent night vision and can see at only one-sixth the
@@ -58,7 +63,7 @@
               increasing the eye's sensitivity to dim light.
             </p>
           </div>
-          <div>
+          <div class="col">
             <h3>Hearing</h3>
             <p>
               The domestic cat's hearing is most acute in the range of 500 Hz to
@@ -67,7 +72,7 @@
               octaves, while humans and dogs can hear ranges of about 9 octaves.
             </p>
           </div>
-          <div>
+          <div class="col">
             <h3>Smell</h3>
             <p>
               Cats have an acute sense of smell, due in part to their
@@ -78,7 +83,7 @@
               behavioral process of flehmening.
             </p>
           </div>
-          <div>
+          <div class="col">
             <h3>Taste</h3>
             <p>
               Cats have relatively few taste buds compared to humans (470 or so
@@ -88,7 +93,7 @@
               ability to taste sweetness.
             </p>
           </div>
-          <div>
+          <div class="col">
             <h3>Whiskers</h3>
             <p>
               To aid with navigation and sensation, cats have dozens of movable
@@ -99,7 +104,7 @@
               to protect the eyes from damage
             </p>
           </div>
-          <div>
+          <div class="col">
             <h3>Balance</h3>
             <p>
               Outdoor cats are active both day and night, although they tend to
@@ -113,21 +118,21 @@
         </div>
       </div>
     </section>
-    <section>
+    <section class="py-5">
       <!-- In this section the display should be 3 items per row on bigger screens(breakpoint:md) and 1 item per row on mobile -->
       <!-- Hint: Use breakpoints -->
-      <div>
+      <div class="container">
         <h2>Cat Breeds</h2>
-        <div>
+        <div class="row row-cols-1 row-cols-md-2">
           <!-- Hint: to align the image and text, you can use bootstrap's flex classes per column  -->
-          <div>
+          <div class="d-flex flex-column align-items-center mb-5">
             <div
               class="breed-img"
               style="background-image: url('images/breeds/devon-rex.png')"
             ></div>
             <h3>Devon Rex</h3>
           </div>
-          <div>
+          <div class="d-flex flex-column align-items-center mb-5">
             <div
               class="breed-img"
               style="
@@ -136,28 +141,28 @@
             ></div>
             <h3>Oriental Shorthair</h3>
           </div>
-          <div>
+          <div class="d-flex flex-column align-items-center mb-5">
             <div
               class="breed-img"
               style="background-image: url('images/breeds/ragdoll.jpg')"
             ></div>
             <h3>Ragdoll</h3>
           </div>
-          <div>
+          <div class="d-flex flex-column align-items-center mb-5">
             <div
               class="breed-img"
               style="background-image: url('images/breeds/scottish-fold.jpg')"
             ></div>
             <h3>Scottish Fold</h3>
           </div>
-          <div>
+          <div class="d-flex flex-column align-items-center mb-5">
             <div
               class="breed-img"
               style="background-image: url('images/breeds/siberian.jpg')"
             ></div>
             <h3>Siberian</h3>
           </div>
-          <div>
+          <div class="d-flex flex-column align-items-center mb-5">
             <div
               class="breed-img"
               style="background-image: url('images/breeds/sphynx.jpg')"
